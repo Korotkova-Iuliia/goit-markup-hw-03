@@ -1,0 +1,226 @@
+:root {
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --color-title: #212121;
+  --color-txt: #757575;
+  --color-accent: #2196f3;
+  --color-menu: #212121;
+  --color-menu-contakt: #757575;
+  --background-hero-footer: #2f303a;
+  --bgr-team-button-portfolio: #f5f4fa;
+  --stroke-card-portfolio: #eeeeee;
+  --contact-footer: rgba(255, 255, 255, 0.6);
+}
+
+body {
+  font-family: var(--main-font);
+  font-style: normal;
+  color: var(--color-txt);
+}
+
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+
+/* ==== navigation ==== */
+.logo {
+  font-family: Raleway;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #000000;
+}
+.logo-web {
+  color: var(--color-accent);
+}
+.menu-list {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: var(--color-menu);
+}
+.menu-contact {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: var(--color-menu-contakt);
+}
+.menu-list-studio,
+.menu-list-portfolio {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: var(--color-accent);
+}
+
+.menu-list:hover,
+.menu-list:focus,
+.menu-contact:hover,
+.menu-contact:focus {
+  color: var(--color-accent);
+}
+
+/* ===== hero ===== */
+.hero {
+  background: var(--background-hero-footer);
+  text-align: center;
+}
+.hero-title {
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.hero-button {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background: #2196f3;
+  cursor: pointer;
+}
+
+/* == section the best == */
+.section-the-best {
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+.the-best-title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  color: var(--color-title);
+  text-transform: uppercase;
+}
+.the-best-txt {
+  font-weight: 400;
+  line-height: 1.71;
+}
+
+/* ===== section we do ===== */
+
+.we-do-title,
+.team-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--color-title);
+}
+
+/* ===== section team ===== */
+.team-name {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  text-align: center;
+  font-weight: 500;
+  color: var(--color-title);
+}
+.team-txt {
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  text-align: center;
+  font-weight: 400;
+  color: var(--color-txt);
+}
+
+/* ===== portfolio ===== */
+.portfolio-button-menu {
+  text-align: center;
+}
+.section-portfolio,
+.portfolio-button {
+  font-family: var(--main-font);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--color-title);
+  background-color: var(--bgr-team-button-portfolio);
+  border: none;
+  cursor: pointer;
+}
+.portfolio-button:hover,
+.portfolio-button:focus {
+  font-family: var(--main-font);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  background-color: var(--color-accent);
+}
+.portfolio-card {
+  text-align: left;
+  /* border-color: #eeeeee;
+  border: 1px; */
+}
+.card-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--color-title);
+}
+.card-txt {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+}
+/* footer */
+footer {
+  background: var(--background-hero-footer);
+}
+.logo-studio {
+  color: #ffffff;
+}
+
+.contact {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: var(--contact-footer);
+}
+
+.contact-map {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #ffffff;
+}
+
+.contact-map:hover,
+.contact-map:focus,
+.contact:hover,
+.contact:focus {
+  color: var(--color-accent);
+}
