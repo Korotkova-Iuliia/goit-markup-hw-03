@@ -57,8 +57,22 @@ ol {
 }
 
 /* ==== navigation ==== */
+li {
+  outline: 1px solid tomato;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav .menu {
+  display: flex;
+}
+
 .logo {
-  font-family: Raleway;
+  margin-right: 93px;
+  font-family: var(--secondary-font);
   font-size: 26px;
   font-style: normal;
   font-weight: 700;
@@ -70,13 +84,28 @@ ol {
 .logo-web {
   color: var(--color-accent);
 }
+
+.item-li + .item-li {
+  margin-left: 50px;
+}
+
 .menu-list {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-align: left;
   color: var(--color-menu);
+}
+
+.nav-adress {
+  display: flex;
+  /* align-items: center; */
+  margin-left: auto;
 }
 .menu-contact {
   font-size: 14px;
@@ -86,8 +115,8 @@ ol {
   text-align: left;
   color: var(--color-menu-contakt);
 }
-.menu-list-studio,
-.menu-list-portfolio {
+
+.curent {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
@@ -106,9 +135,13 @@ ol {
 /* ===== hero ===== */
 .hero {
   background: var(--background-hero-footer);
+  margin-left: -200px;
+  padding: 200px;
+  width: 1600px;
   text-align: center;
 }
 .hero-title {
+  margin-bottom: 30px;
   font-size: 44px;
   font-weight: 900;
   line-height: 1.4;
