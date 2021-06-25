@@ -47,32 +47,35 @@ li {
   outline: 1px solid tomato;
 }
 
-/* ==== conteiner ===== */
+/* ======= COMPONENTS ======== */
+
 .container {
   width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-
   margin-left: auto;
   margin-right: auto;
-}
-.section {
+  padding-left: 15px;
+  padding-right: 15px;
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 /* ==== navigation ==== */
+.header-section {
+  align-items: center;
+  display: flex;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  justify-content: space-between;
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
 
 .nav {
   display: flex;
   align-items: center;
-  border: 1px solid #ececec;
 }
-
-.nav .menu {
-  display: flex;
-}
-
 .logo {
   margin-right: 93px;
   font-family: var(--secondary-font);
@@ -88,38 +91,20 @@ li {
   color: var(--color-accent);
 }
 
-.item-li + .item-li {
-  margin-left: 50px;
+.menu {
+  display: flex;
 }
-
 .menu-list {
-  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-
+  display: block;
   font-size: 14px;
   font-weight: 500;
-  line-height: 1.4;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   text-align: left;
   color: var(--color-menu);
 }
-
-.nav-adress {
-  display: flex;
-
-  /* align-items: center; */
-  margin-left: auto;
-}
-.menu-contact {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-align: left;
-  color: var(--color-menu-contakt);
-}
-
 .curent {
   font-size: 14px;
   font-weight: 500;
@@ -127,6 +112,33 @@ li {
   letter-spacing: 0.02em;
   text-align: left;
   color: var(--color-accent);
+}
+
+/* .item-li + .item-li {
+  margin-left: 50px;
+} */
+.item-li:not(:last-child) {
+  margin-right: 50px;
+}
+.item-li {
+  display: block;
+}
+
+.nav-adress {
+  display: flex;
+  margin-left: auto;
+}
+.mail-contact {
+  margin-right: 50px;
+}
+
+.menu-contact {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: var(--color-menu-contakt);
 }
 
 .menu-list:hover,
@@ -139,7 +151,7 @@ li {
 /* ===== hero ===== */
 .hero {
   background: var(--background-hero-footer);
-  margin-left: -200px;
+  /* margin-left: -200px;/ */
   padding: 200px;
   width: 1600px;
   text-align: center;
