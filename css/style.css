@@ -158,7 +158,11 @@ li {
   text-align: center;
 }
 .container-hero {
-  padding: 200px auto;
+  text-align: center;
+  padding-right: auto;
+  padding-left: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   margin-bottom: 30px;
@@ -225,6 +229,7 @@ li {
 
 .we-do-title,
 .team-title {
+  margin-bottom: 50px;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.17;
@@ -234,6 +239,19 @@ li {
 }
 
 /* ===== section team ===== */
+
+.team {
+  display: flex;
+  margin-left: -30px;
+  margin-top: -30px;
+  padding-bottom: 94px;
+}
+.team-list {
+  margin-left: 30px;
+  margin-top: 30px;
+  border-radius: 4px;
+}
+
 .team-name {
   font-size: 16px;
   font-weight: 500;
@@ -303,10 +321,25 @@ li {
 footer {
   background: var(--background-hero-footer);
 }
+.div-footer {
+  padding: 60px 15px;
+  margin-right: auto;
+}
+.div-footer .logo {
+  margin-bottom: 20;
+}
 .logo-studio {
   color: #ffffff;
 }
-
+.address {
+  display: block;
+}
+.contact-list:not(:last-chaild) {
+  margin-bottom: 20px;
+}
+contact-list {
+  display: block;
+}
 .contact {
   font-size: 14px;
   font-style: normal;
