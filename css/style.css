@@ -47,9 +47,9 @@ img {
   display: block;
 }
 /* =====&&&&======= */
-li {
+/* li {
   outline: 1px solid tomato;
-}
+} */
 
 /* ======= COMPONENTS ======== */
 
@@ -272,10 +272,18 @@ li {
 
 /* ===== portfolio ===== */
 .portfolio-button-menu {
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 56px;
+  justify-content: center;
   text-align: center;
 }
-.section-portfolio,
+
+/* .section-portfolio */
 .portfolio-button {
+  padding: 6px 22px;
+  border-radius: 4px;
+
   font-family: var(--main-font);
   font-size: 16px;
   font-weight: 500;
@@ -289,6 +297,8 @@ li {
 }
 .portfolio-button:hover,
 .portfolio-button:focus {
+  padding: 6px 22px;
+
   font-family: var(--main-font);
   font-size: 16px;
   font-weight: 500;
@@ -296,27 +306,61 @@ li {
   letter-spacing: 0.03em;
   text-align: center;
   color: #ffffff;
-  border: none;
   background-color: var(--color-accent);
+  border: none;
+  border-radius: 4px;
+}
+.portfolio-button-li:not(:first-child) {
+  margin-left: 20px;
+}
+.portfolio-card-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap));
+
+  border: 1px;
+  border-color: var(--color-accent);
 }
 .portfolio-card {
   text-align: left;
+  flex-basis: calc((100% - 3 * var(--card-set-gap)) / 3);
   /* border-color: #eeeeee;
   border: 1px; */
+}
+.portfolio-card {
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
+}
+.portfolio-card-content {
+  padding: 20px 24px 4px 24px;
+  
 }
 .card-title {
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
+  Line height: 171%
   letter-spacing: 0.06em;
   color: var(--color-title);
 }
 .card-txt {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.9;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
   letter-spacing: 0.03em;
 }
+.section-portfolio .container {
+padding-bottom: 94px;
+}
+
+.portfolio-card-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap));
+}
+
 /* footer */
 footer {
   background: var(--background-hero-footer);
