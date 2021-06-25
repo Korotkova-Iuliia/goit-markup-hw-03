@@ -239,7 +239,9 @@ img {
 }
 
 /* ===== section team ===== */
-
+  /* border:10px;
+  border-color: var(--color-title);
+  border-radius: 4px; */
 .team {
   display: flex;
   margin-left: -30px;
@@ -249,16 +251,15 @@ img {
 .team-list {
   margin-left: 30px;
   margin-top: 30px;
-  border-radius: 4px;
-}
+  }
 
 .team-name {
+  margin-top: var(--card-set-gap);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.9;
   letter-spacing: 0.03em;
   text-align: center;
-  font-weight: 500;
   color: var(--color-title);
 }
 .team-txt {
@@ -369,20 +370,21 @@ footer {
   padding: 60px 15px;
   margin-right: auto;
 }
-.div-footer .logo {
+.logo-footer {
+  margin-bottom: 20px;
+}
+
+.container > .logo {
+  display: block;
   margin-bottom: 20;
 }
 .logo-studio {
   color: #ffffff;
 }
-.address {
+
+.contact-list {
   display: block;
-}
-.contact-list:not(:last-chaild) {
-  margin-bottom: 20px;
-}
-contact-list {
-  display: block;
+  margin-bottom: 9px;
 }
 .contact {
   font-size: 14px;
