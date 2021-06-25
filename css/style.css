@@ -42,6 +42,10 @@ ol {
   margin-bottom: 0px;
   padding-left: 0px;
 }
+
+img {
+  display: block;
+}
 /* =====&&&&======= */
 li {
   outline: 1px solid tomato;
@@ -56,7 +60,7 @@ li {
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 0;
 }
 
 /* ==== navigation ==== */
@@ -151,10 +155,10 @@ li {
 /* ===== hero ===== */
 .hero {
   background: var(--background-hero-footer);
-  /* margin-left: -200px;/ */
-  padding: 200px;
-  width: 1600px;
   text-align: center;
+}
+.container-hero {
+  padding: 200px auto;
 }
 .hero-title {
   margin-bottom: 30px;
@@ -166,6 +170,8 @@ li {
   color: #ffffff;
 }
 .hero-button {
+  padding: 10px 32px;
+  border-radius: 4px;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.9;
@@ -185,7 +191,7 @@ li {
   justify-content: space-between;
 }
 .the-best-list {
-  flex-basis: calc(100% / 4 - var(--card-set-gap));
+  flex-basis: calc((100% - 90px) / 4);
 }
 .the-best-list + .the-best-list {
   margin-left: var(--card-set-gap);
@@ -208,6 +214,14 @@ li {
 }
 
 /* ===== section we do ===== */
+
+.we-do {
+  display: flex;
+  margin-left: -30px;
+}
+.we-do-li {
+  margin-left: 30px;
+}
 
 .we-do-title,
 .team-title {
